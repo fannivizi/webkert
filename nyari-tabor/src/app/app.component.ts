@@ -15,4 +15,8 @@ import {SignupComponent} from './pages/signup/signup.component';
 export class AppComponent {
   title = 'nyari-tabor';
   page = "home";
+
+  changepage(select: string) {
+    this.page = select;
+  }
 }
