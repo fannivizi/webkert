@@ -1,0 +1,25 @@
+<main>
+  <div class="container">
+    <h1>Tábori Jelentkezés</h1>
+    <p>Kérjük, töltsd ki az alábbi űrlapot a jelentkezéshez.</p>
+
+    <form class="signup-form">
+      <label for="name">Név</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email cím</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Telefonszám</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="age">Gyermek életkora</label>
+      <input type="number" id="age" name="age" min="5" max="16" required />
+
+      <label for="message">Megjegyzés (opcionális)</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Jelentkezem</button>
+    </form>
+  </div>
+</main>
