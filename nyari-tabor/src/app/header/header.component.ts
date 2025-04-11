@@ -9,13 +9,13 @@ import {Component, EventEmitter, Output} from '@angular/core';
 export class HeaderComponent {
   title = "header"
 
-  @Output() select: EventEmitter<string> = new EventEmitter();
+  @Output() switchPage: EventEmitter<string> = new EventEmitter();
 
   constructor(){
     console.log("construtor called");
   }
 
   menuSwitch(pageValue: string) {
-    this.select.emit(pageValue);
+    this.switchPage.emit(pageValue);
   }
 }

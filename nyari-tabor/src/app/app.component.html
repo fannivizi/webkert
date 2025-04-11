@@ -7,7 +7,7 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<app-header (select)="changepage($event)"></app-header>
+<app-header (switchPage)="changepage($event)"></app-header>
 
 @if (page === "home") {
   <app-home></app-home>

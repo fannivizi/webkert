@@ -16,7 +16,8 @@ export class AppComponent {
   title = 'nyari-tabor';
   page = "home";
 
-  changepage(select: string) {
-    this.page = select;
+  changepage(page: string) {
+    console.log("Changing page to:", page);
+    this.page = page;
   }
 }
